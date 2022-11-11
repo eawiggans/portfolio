@@ -11,13 +11,19 @@
 
 <body>
    
-    <header class="container nav-head">
+    <header>
         <h1>Emma Wiggans</h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work-examples">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
                 <li>Resume</li>
             </ul>
         </nav>
@@ -27,42 +33,55 @@
     
     <figure></figure>
 
-    <main>
-        <section class="container about-me">
-            <h2>About Me</h2>
-            <p>This is the about me section!</p>
+        <article>
 
-        </section>
+            <aside class="lefty">
+                <h2>About Me</h2>
+            </aside>
 
-        <section class="container work-examples">
-            <h2>Work</h2>
+            <p>This is the about me section.</p>
 
-            <section class="work-imgs">
-                <ul>
-                    <li id="fern">
-                        <img id="fern-pic" src="../portfolio/assets/images/ferns.jpg" alt="ferns">
-                    </li>
-                    <li id="ivy">
-                        <img id="ivy-pic" src="./assets/images/english ivy.jpg" alt="english ivy">
-                    </li>
-                    <li id="rosa">
-                        <img id="rosa-pic" src="./assets/images/Rugosa+rose.jpg" alt="pink rose bush">
-                    </li>
+        </article>
 
-                </ul>
+        <main>
 
+            <aside class="lefty">
+                <h2>Work</h2>
+            </aside>
+            
+            <section>
+                <div class="large-card">
+                    <img id="fern-pic" src="../portfolio/assets/images/ferns.jpg" alt="ferns">
+                    <div class="bottom-left">First Project</div>
+                </div>
+                <div class="small-cards">
+                    <img id="ivy-pic" src="./assets/images/english ivy.jpg" alt="english ivy">
+                    <div class="bottom-left">Second Project</div>
+                </div>
+                <div class="small-cards">
+                    <img id="rosa-pic" src="./assets/images/Rugosa+rose.jpg" alt="pink rose bush">
+                    <div class="bottom-left">Third Project</div>
+                </div>
+                <div class="small-cards">
+                    <img id="violet-pic" src="./assets/images/Violets2.jpg" alt="purple violets">
+                    <div class="bottom-left">Fourth Project</div>
+                </div>
+                <div class="small-cards">
+                    <img id="rosa-pic" src="./assets/images/WeepingWillow2_610b29bd-dc14-4f54-affc-fee81a40c646.jpg" alt="looking up at a weeping willow tree">
+                    <div class="bottom-left">Fifth Project</div>
+                </div>
             </section>
 
-        </section>
+        </main>
 
-    </main>
+    <footer class="container contact-me" id="contact-me">
 
-    <footer class="container contact-me">
         <h2>Contact Me</h2>
+
         <ul>
-            <li>Phone Number</li>
-            <li>Email</li>
-            <li>Github</li>
+            <li>555.555.5555</li>
+            <li>Email @ email . com</li>
+            <li>Github . link</li>
         </ul>
 
     </footer>

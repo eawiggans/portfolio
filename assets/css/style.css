@@ -1,73 +1,128 @@
 * {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: white;
-    color: rgb(5, 66, 68);
-    /* height: 100vh;
-    width: 100vh; */
+    display: block;
+    border: 3px;
+    border-color: black;
+    width: 100%;
 }
-
 
 header {
+    display: flex;
+}
+
+header ul {
+    list-style: none;
+    display: block;
 
 }
 
-
-
-nav li {
+header li {
     display: inline-block;
     margin: 20px;
 }
-figure {
-    height: 200px;
-    width: 100%;
-    background-image: url("../images/water-5245722_1280.jpg");
-    background-size: cover;
-    background-position: center;
-}
 
-.container {
+article {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    align-items: flex-start;
-    max-width: 100%;
 }
 
-.container h2 {
-    width: 150px;
-    order: 0;
-    border-color:rgb(5, 66, 68);
-    border-style: solid;
-    border-width: 0px 3px 0px 0px;
+article aside {
+    flex: 0 0 20%;
+    text-align: right;
+    padding: 20px;
+    border-right-width: 5px;
+    border-right-color: black;
+    border-right-style: solid;
 
+}
+
+article p {
+    flex: 0 0 80%;
+    padding: 30px;
+
+
+}
+
+main {
+    display: flex;
+}
+
+main aside {
+    flex: 0 0 20%;
+    text-align: right;
+    padding: 20px;
+    border-right-width: 5px;
+    border-right-color: black;
+    border-right-style: solid;
+
+}
+
+main section {
+    flex: 0 0 80%;
+    display: flex; 
+    flex-wrap:wrap;
+    padding: 20px;
+
+}
+
+.large-card {
+    flex: 0 0 100%;
+    padding: 10px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.bottom-left {
+    margin-top: -40px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.small-cards {
+    flex: 0 0 50%;
+    padding: 10px;
+ 
+}
+
+section img {
+    width: 100%
+}
+
+footer {
+    display: flex;
+}
+
+footer h2 {
    
 }
 
-.work-imgs {
-    max-width: 700px;
-}
-
-.work-imgs ul {
+footer ul {
     list-style: none;
-    display: flex;
 }
 
-#fern-pic { 
-    flex-basis: 100%;
-    flex-grow: 1;
-
+footer li {
+    display: inline;
+    margin: 20px;
 }
 
-#ivy-pic {
-    width: 300px;
-    flex-grow: 1;
-}
 
-#rosa-pic {
-    width: 300px;
-    flex-grow: 1;
-}
+@media screen and (max-width: 992px) {
+
+  }
+  
+
+  @media screen and (max-width: 768px) {
+
+  }
+  
+
+  @media screen and (max-width: 576px) {
+
+  }
